@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1638033275">
+  <File Type="PA-TCL" Name="interleaver_1024.tcl"/>
+  <File Type="REPORTS-TCL" Name="interleaver_1024_reports.tcl"/>
+  <File Type="RDS-RDS" Name="interleaver_1024.vds"/>
+  <File Type="RDS-UTIL" Name="interleaver_1024_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="interleaver_1024_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="interleaver_1024.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/DFF.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/DFF.vhd"/>
+        <Attr Name="ImportTime" Val="1635334948"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/DFF_N.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/DFF_N.vhdl"/>
+        <Attr Name="ImportTime" Val="1635332058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/DFF_en.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/DFF_en.vhd"/>
+        <Attr Name="ImportTime" Val="1634400368"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1637509284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1635332102"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/interleaver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/interleaver.vhd"/>
+        <Attr Name="ImportTime" Val="1638028616"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ripple_carry_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/ripple_carry_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1635332022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/interleaver_1024.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../hdl/src/interleaver_1024.vhd"/>
+        <Attr Name="ImportTime" Val="1636735956"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="interleaver_1024"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing_contraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/timing_contraint.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
